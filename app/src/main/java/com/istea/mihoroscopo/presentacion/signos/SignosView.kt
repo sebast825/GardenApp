@@ -81,7 +81,7 @@ fun ListaDeSignosView(signos: List<Signo>, onSelect: (Signo)->Unit){
         items(items = signos) {signo ->
             Card(
                 modifier = Modifier
-                    .padding(horizontal = 20.dp)
+                    .padding(20.dp)
                     .fillMaxWidth(),
                 colors = CardDefaults.cardColors(
                     contentColor = MaterialTheme.colorScheme.secondary,
@@ -93,6 +93,7 @@ fun ListaDeSignosView(signos: List<Signo>, onSelect: (Signo)->Unit){
             ) {
                 Row (
                     verticalAlignment = Alignment.CenterVertically
+
                 ){
                     Image(
                         painterResource(signo.ilustrationId),
